@@ -1,7 +1,7 @@
 import { Profile } from './Profile';
 import { Statistics } from './Statistics';
-import user from './Profile/user.json';
-import data from './Statistics/data.json';
+import user from 'components/user.json';
+import data from 'components/data.json';
 
 export const App = () => {
   return (
@@ -14,6 +14,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
+      <Statistics stats={data} />
     </div>
   );
 };
