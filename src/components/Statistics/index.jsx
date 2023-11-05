@@ -1,13 +1,16 @@
+import { List } from 'components/List';
+import { SectionWrapper } from './SectionWrapper';
+
 export const Statistics = ({ title, stats }) => (
-  <section className="statistics">
-    {title && <h2 className="title">{title}</h2>}
-    <ul className="stat-list">
+  <SectionWrapper>
+    {title && <h2>{title}</h2>}
+    <List>
       {stats.map(el => (
-        <li className="item" key={el.id}>
-          <span className="label">{el.label}</span>
-          <span className="percentage">{el.percentage}%</span>
+        <li key={el.id}>
+          <span>{el.label}</span>
+          <span>{el.percentage}%</span>
         </li>
       ))}
-    </ul>
-  </section>
+    </List>
+  </SectionWrapper>
 );

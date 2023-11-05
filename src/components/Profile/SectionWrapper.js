@@ -1,14 +1,10 @@
 import styled from 'styled-components';
+import { Wrapper } from 'components/Wrapper';
 
-export const Container = styled('div')(() => {
+export const SectionWrapper = styled(Wrapper)(() => {
   return {
     width: '180px',
-    textAlign: 'center',
-    margin: '0 auto',
-    borderRadius: '10px',
-    overflow: 'hidden',
-    border: '2px solid #dcdcdc',
-    boxShadow: '5px 5px 8px 2px rgba(0, 0, 0, 0.3)',
+    // marginBottom: '20px',
     '& div': { padding: '10px 0' },
     '& img': { margin: '0 auto' },
     '& p': {

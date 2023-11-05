@@ -1,5 +1,5 @@
 import { List } from 'components/List';
-import { Container } from './Container';
+import { SectionWrapper } from './SectionWrapper';
 
 export const Profile = ({
   username,
@@ -8,7 +8,7 @@ export const Profile = ({
   avatar,
   stats: { followers, views, likes },
 }) => (
-  <Container>
+  <SectionWrapper>
     <div>
       <img src={avatar} alt="User avatar" width="120" />
       <p>{username}</p>
@@ -29,5 +29,5 @@ export const Profile = ({
         <span>{likes}</span>
       </li>
     </List>
-  </Container>
+  </SectionWrapper>
 );
