@@ -1,3 +1,6 @@
+import { List } from 'components/List';
+import { Container } from './Container';
+
 export const Profile = ({
   username,
   tag,
@@ -5,26 +8,26 @@ export const Profile = ({
   avatar,
   stats: { followers, views, likes },
 }) => (
-  <div className="profile">
+  <Container>
     <div className="description">
-      <img src={avatar} alt="User avatar" className="avatar" />
+      <img src={avatar} alt="User avatar" className="avatar" width="120" />
       <p className="name">{username}</p>
       <p className="tag">@{tag}</p>
       <p className="location">{location}</p>
     </div>
-    <ul className="stats">
+    <List>
       <li>
-        <span className="label">Followers</span>
-        <span className="quantity">{followers}</span>
+        <span>Followers </span>
+        <span>{followers}</span>
       </li>
       <li>
-        <span className="label">Views</span>
-        <span className="quantity">{views}</span>
+        <span>Views</span>
+        <span>{views}</span>
       </li>
       <li>
-        <span className="label">Likes</span>
-        <span className="quantity">{likes}</span>
+        <span>Likes</span>
+        <span>{likes}</span>
       </li>
-    </ul>
-  </div>
+    </List>
+  </Container>
 );
