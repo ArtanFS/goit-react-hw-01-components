@@ -9,11 +9,11 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => (
   <Container>
-    <div className="description">
-      <img src={avatar} alt="User avatar" className="avatar" width="120" />
-      <p className="name">{username}</p>
-      <p className="tag">@{tag}</p>
-      <p className="location">{location}</p>
+    <div>
+      <img src={avatar} alt="User avatar" width="120" />
+      <p>{username}</p>
+      <p>@{tag}</p>
+      <p>{location}</p>
     </div>
     <List>
       <li>
