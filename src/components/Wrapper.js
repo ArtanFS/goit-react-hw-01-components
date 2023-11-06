@@ -8,6 +8,5 @@ export const Wrapper = styled('div')(() => {
     overflow: 'hidden',
     border: '2px solid #dcdcdc',
     boxShadow: '5px 5px 8px 2px rgba(0, 0, 0, 0.3)',
-    '&:not(:last-child)': { marginBottom: '20px' },
   };
 });

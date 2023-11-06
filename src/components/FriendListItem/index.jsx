@@ -1,10 +1,11 @@
 import clsx from 'clsx';
+import { ListItem } from './ListItem';
 
 export const FriendListItem = ({ friends }) =>
   friends.map(el => (
-    <li className="item" key={el.id}>
-      <span className={clsx('status', el.isOnline && 'online')}></span>
-      <img className="avatar" src={el.avatar} alt="User avatar" width="48" />
-      <p className="name">{el.name}</p>
-    </li>
+    <ListItem key={el.id} color={el.isOnline ? 'green' : 'red'}>
+      <span></span>
+      <img src={el.avatar} alt="User avatar" width="48" />
+      <p>{el.name}</p>
+    </ListItem>
   ));

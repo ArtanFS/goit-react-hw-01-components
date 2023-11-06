@@ -4,7 +4,7 @@ import { Wrapper } from 'components/Wrapper';
 export const SectionWrapper = styled(Wrapper)(() => {
   return {
     width: '180px',
-    // marginBottom: '20px',
+    marginBottom: '20px',
     '& div': { padding: '10px 0' },
     '& img': { margin: '0 auto' },
     '& p': {

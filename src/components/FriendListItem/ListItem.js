@@ -1,29 +1,23 @@
 import styled from 'styled-components';
 
-export const ListIem = styled('li')(() => {
+export const ListItem = styled('li')(({ color }) => {
   return {
     display: 'flex',
-    '& li': {
-      display: 'flex',
-      gap: '5px',
-      flexDirection: 'column',
-      width: '100%',
-      height: '50px',
-      justifyContent: 'center',
-      fontSize: '12px',
-      backgroundColor: '#ececec',
-      border: '1px solid #dcdcdc',
-      borderTop: '2px solid #dcdcdc',
-      borderBottom: 'none',
-    },
-    '& li:first-child': {
-      borderLeft: 'none',
-    },
-    '& li:last-child': {
-      borderRight: 'none',
-    },
-    '& li>:nth-child(2)': {
-      fontWeight: '700',
+    gap: '10px',
+    alignItems: 'center',
+    height: '64px',
+    fontSize: '20px',
+    fontWeight: '500',
+    padding: '0 10px',
+    marginBottom: '10px',
+    borderRadius: '10px',
+    border: '2px solid #dcdcdc',
+    boxShadow: '5px 5px 8px 2px rgba(0, 0, 0, 0.3)',
+    '& span': {
+      width: '15px',
+      height: '15px',
+      backgroundColor: color,
+      borderRadius: '50%',
     },
   };
 });
