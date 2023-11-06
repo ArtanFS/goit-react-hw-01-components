@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { ListItem } from './ListItem';
 
 export const FriendListItem = ({ friends }) =>
