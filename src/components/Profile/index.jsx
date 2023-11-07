@@ -1,5 +1,5 @@
-import { List } from 'components/List';
-import { SectionWrapper } from './SectionWrapper';
+import { List } from 'components/List.styled';
+import { SectionWrapper } from './SectionWrapper.styled';
 
 export const Profile = ({
   username,

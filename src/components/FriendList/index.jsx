@@ -1,5 +1,5 @@
 import { FriendListItem } from 'components/FriendListItem';
-import { List } from './FriendList';
+import { List } from './FriendList.styled';
 import friends from '../friends.json';
 
 export const FriendList = () => (

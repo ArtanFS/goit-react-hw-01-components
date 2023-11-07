@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Wrapper } from 'components/Wrapper';
+import { Wrapper } from 'components/Wrapper.styled';
 
 export const SectionWrapper = styled(Wrapper)(() => {
   return {

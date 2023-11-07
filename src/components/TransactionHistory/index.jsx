@@ -1,4 +1,4 @@
-import { Table } from './TransactionHistory';
+import { Table } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ items }) => (
   <Table>

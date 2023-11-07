@@ -1,4 +1,4 @@
-import { ListItem } from './ListItem';
+import { ListItem } from './ListItem.styled';
 
 export const FriendListItem = ({ friends }) =>
   friends.map(el => (
